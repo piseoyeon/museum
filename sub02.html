@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Herbert Bayer Museum</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="anchor1" class="menu1"><a href="index.html"><img src="img/sub_logo.png" alt="logo"></a></li>
+          <div class="Introduce two">
+          <li class="menu2"><a href="sub01.html">Introduce</a></li>
+          </div>
+          <div class="works two">
+          <li class="menu3"><a href="sub02.html">works</a></li>
+          </div>
+          <div class="uni two">
+          <li class="menu4"><a href="sub03.html">universal</a></li>
+          </div>
+          <div class="visit two">
+          <li class="menu2"><a href="sub04.html">visit</a></li>
+          </div>
+        </ul>
+      </nav>
+   </header>
+    <section>
+      <div class="bg4">
+      </div>
+      <div class="bg5">
+        <div class="sub_con2">
+          <img src="img/sub_02.png" alt="herbert bayer works">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="copyright">
+      © 2022. Herbert Bayer Museum All Rights Reserved.
+      </div>
+
+
+            <ul>
+            <li class="top">
+            <a onclick="fnMove('1')"><img src="img/top.png" alt="top button">
+            </a>
+            </li>
+            </ul>
+
+    </footer>
+
+    <!--특정위치로 쩜프해서 이동 시작-->
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+          var offset = $("#anchor" + seq).offset();
+          $('html, body').animate({scrollTop : offset.top},500);
+      }
+    </script>
+    <!--특정위치로 쩜프해서 이동 끝-->
+  </body>
+</html>
